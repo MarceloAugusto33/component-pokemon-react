@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(232, 232, 232);
+    font-family: 'Open Sans', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    transition: all .4s;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.card {
+    max-width: 700px;
+    background: white;
+
+    padding: 2rem;
+
+    border: 1px solid rgba(32, 32, 32, 0.154);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.121);
+
+    transition: all .3s;
+
+    &>img {
+        width: 70%;
+        height: 100px;
+
+        margin: 0 auto;
+        display: block;
+        object-fit: contain;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background: white;
+    }
+    .card{
+        padding: 1rem;
+        border: none;
+        box-shadow: none;
+    }
+}
