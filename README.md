@@ -16,7 +16,7 @@ Instale as dependencias
 
 Roda a aplicação
 ```bash
-    npm run dev
+    npm run
 ```
 
 Opção 2: React Pokedéx
@@ -47,7 +47,7 @@ Requisitos
         <span>BUSCAR</span>
     </button>
 ```
-O componente não deve realizar a requisição caso o valor do input seja vazio [ x ]
+- O componente não deve realizar a requisição caso o valor do input seja vazio [ x ]
 ```javascript
     if (!namePokemon) {
         setPokemonData(null)
@@ -55,12 +55,12 @@ O componente não deve realizar a requisição caso o valor do input seja vazio 
     }
 ```
 
-O componente precisa exibir o nome do Pokemón e a quantidade de habilidades em um texto centralizado, ex: Pokemón: snorlax - Habilidades: 2 [ x ]
+- O componente precisa exibir o nome do Pokemón e a quantidade de habilidades em um texto centralizado, ex: Pokemón: snorlax - Habilidades: 2 [ x ]
 ```html
     <h2>Pokemon: {pokemonData.name} - Habilidades: {pokemonData.abilities.length}</h2>
 
 ```
-O componente deve exibir as habilidades em uma lista HTML [ x ]
+- O componente deve exibir as habilidades em uma lista HTML [ x ]
 ```html
     <ul>
         {pokemonData.abilities.map((abilities) => (
@@ -71,7 +71,7 @@ O componente deve exibir as habilidades em uma lista HTML [ x ]
 ```
 
 
-O componente deve tratar os HTTP STATUS CODE: 200 se o pokemón foi localizado e 404 se o pokemón não for localido na pokedéx. [ x ]
+- O componente deve tratar os HTTP STATUS CODE: 200 se o pokemón foi localizado e 404 se o pokemón não for localido na pokedéx. [ x ]
 
 ```javascript
     try {
