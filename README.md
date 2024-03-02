@@ -16,7 +16,7 @@ Instale as dependencias
 
 Roda a aplicação
 ```bash
-    npm run
+    npm run dev
 ```
 
 Opção 2: React Pokedéx
